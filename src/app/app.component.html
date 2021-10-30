@@ -1,0 +1,8 @@
+<div *ngIf="posts$ | async as posts; else loadingOrError">asdas dadss</div>
+
+<ng-template #loadingOrError>
+  <ng-container *ngIf="error; else loading"> {{ error | json }} </ng-container>
+  <ng-template #loading>
+    <p>loading</p>
+  </ng-template>
+</ng-template>
