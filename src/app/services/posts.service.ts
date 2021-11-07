@@ -7,7 +7,7 @@ import PostsModel from '../models/posts.model';
   providedIn: 'root',
 })
 export class PostsService {
-  endpoint = '/api/dashboard/';
+  private readonly endpoint = '/api/dashboard/';
 
   constructor(private http: HttpClient) {}
 
